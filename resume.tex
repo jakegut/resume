@@ -20,8 +20,8 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{blindtext}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -56,7 +56,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -114,21 +114,21 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Andrew Fantino} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Andrew Fantino} \\ \vspace{5pt}
     \small US Citizen $|$
-    \small (951) 355-8530 $|$ 
-    \href{mailto:andrew.fantino.951@gmail.com}{andrew.fantino.951@gmail.com} $|$ 
-    \href{https://linkedin.com/in/andrew-fantino/}{linkedin.com/in/andrew-fantino/} $|$
-    \href{https://github.com/afantino951}{github.com/afantino951}
+    \small \faIcon{phone} (951) 355-8530 $|$ 
+    \href{mailto:andrew.fantino.951@gmail.com}{ \faIcon{envelope} Andrew.Fantino.951@gmail.com } $|$ 
+    \href{https://linkedin.com/in/andrew-fantino/}{ \faIcon{linkedin} andrew-fantino } $|$
+    \href{https://github.com/afantino951}{ \faIcon{github} afantino951} 
 \end{center}
-
+\vspace*{-1.5em}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of California Los Angeles}{Expected June 2023}
-      {BS in Computer Engineering w/ Emphasis in Business Management}{GPA: 3.59}
+      {BS in Computer Engineering; Concentration in Business Management}{GPA: 3.59}
       \vspace{-2pt}\item
       \textbf{Coursework} \\
       \begin{tabular*}{0.97\textwidth}{ p{10em} p{13em} p{10em} p{8em} }
@@ -146,23 +146,22 @@
     \begin{multicols}{2}
       \begin{itemize}[leftmargin=0.15in, label={}]
         \small{\item{
-          \textbf{Programming Languages}{: C++, C, Python, Java, SystemVerilog, SQLite (SQLAlchemy)} \\
-          \textbf{PCB and Schematic Design}{: Autodesk Eagle, Basic LT Spice}
+          \textbf{Programming Languages}{: C++, C, Python, Java, SystemVerilog, Reactjs, SQLite (SQLAlchemy)} \\
+          \textbf{Software}{: Linux, Git, Jira, Tableau, Solidworks, LaTeX}
         }}
         \columnbreak
         \small{\item{
-          \textbf{Hardware Tools}{: Lab Equipment, 3D printing, I2C Devices, SPI, UART, STM32, Arduino} \\
-          \textbf{Software}{: Linux, Git, MS Excel, Solidworks, LaTeX}
+          \textbf{Hardware Tools}{: Lab Equipment, 3D printing, I2C Devices, SPI, UART, STM32, Arduino, ARMv7/v8} \\
+          \textbf{PCB and Schematic Design}{: Autodesk Eagle, KiCad, LT Spice}
         }}
       \end{itemize}
     \end{multicols}
-
+\vspace*{-2em}
 %--------------------------------
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
       {Software Engineer Intern}{June 2022 -- Sept. 2022}
       {Viasat Inc.}{Carlsbad, CA}
@@ -177,11 +176,8 @@
           platforms for a 10x speedup from baseline Linux networking stack
         }
         \resumeItem{
-          Reported results to product owners for future development on 
-          encryption hardware
-        }
-        \resumeItem{
-          Applied Agile SCRUM process in development
+          Applied Agile SCRUM process to report results with automated test and analysis scripts to product 
+          owners for future development
         }
       \resumeItemListEnd
       
@@ -200,22 +196,21 @@
       {Ocean Aero Inc.}{San Diego, CA}
       \resumeItemListStart
         \resumeItem{
-          Designed and developed firmware on Cortex ARM based microcontroller 
-          for autonomous water sampling project associated with University of 
-          Washington
+          Developed firmware on Cortex ARM v7 microcontroller for autonomous water 
+          sampling project for University of Washington research group
         }
         \resumeItem{
-          Designed and verify into PCB an iteration of proprietary power 
-          management/distribution system
+          Designed and tested an new iteration of proprietary power management/distribution 
+          system and implemented resulting circuit in production PCB with Autodesk Eagle
+          
         }
         \resumeItem{
-          Implemented new features into existing firmware for ultrasonic 
-          anemometer test platform to speedup testing by 4x
+          Assembled and verified production PCBs for next generation sailing submarines 
         }
         \resumeItem{
-          Improved skills in soldering, EAGLE PCB, design for manufacturing, 
-          quality control procedures, hardware debugging, and embedded C 
-          programming
+          Implemented UART logging and automation features into existing 
+          firmware for ultrasonic anemometer test platform to speedup testing 
+          by 4x
         }
       \resumeItemListEnd
 
@@ -224,19 +219,18 @@
       {IEEE at UCLA}{Los Angeles, CA}
       \resumeItemListStart
         \resumeItem{
-          Yearlong project to learn SystemVerilog with periodic projects on 
-          digital design and signal processing, including implementing 16pt 
-          FFT, with a final project of a digital audio visualizer using an 
-          FPGA with VGA output
-        }
-        \resumeItem{
           Taught 7+ lectures on SystemVerilog, DSP, and serial communication 
           protocols using Altera FPGA for 50+ students with 98\% completion 
           rate
         }
         \resumeItem{
-          Architected piano and calculator projects and updated existing lesson 
-          plans for in person teaching
+          Yearlong SystemVerilog program with projects on digital design and 
+          signal processing, including implementing 16pt FFT for the final 
+          project of a digital audio visualizer using an FPGA with VGA output
+        }
+        \resumeItem{
+          Architected piano and pipelined calculator projects and updated 
+          existing lesson plans for in person teaching
         }
       \resumeItemListEnd
 
@@ -245,14 +239,12 @@
       {Qualcomm Inc.}{San Diego, CA}
       \resumeItemListStart
         \resumeItem{
-          Designed RESTful API to connect web based super grid tool to Tableau. 
-        }
-        \resumeItem{
-          Advanced skills in Python, SQLAlchemy, and database migration
-        }
-        \resumeItem{
           Developed new Tableau dashboards to improve UX which was implemented 
           into production to be used by thousands of full-time staff
+        }
+        \resumeItem{
+          Designed RESTful API in python to connect web based super grid tool 
+          to Tableau with a backend database of SQLite. 
         }
       \resumeItemListEnd
 
@@ -277,15 +269,15 @@
         }
       \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Micromouse (IEEE)} $|$ \emph{PCB Design, Embedded C, PID, Floodfill}}{May 2020}
+          {\textbf{Micromouse (IEEE)} $|$ \emph{PCB Design, Embedded C, PID, Floodfill, STM32 MCUs}}{May 2020}
           \resumeItemListStart
             \resumeItem{
-              Worked with a small team to create a maze solving robot with a 
+              Worked with a small team to create an autonomous maze solving robot with a 
               self-designed PCB and schematic
             }
             \resumeItem{
-              Implemented IR Sensors, and Wheel Encoders, PID and Flood Fill 
-              Algorithms in C
+              Implemented IR sensor fusion, wheel encoder distance calcuation, 
+              PID and Flood Fill algorithms in embedded C
             }
           \resumeItemListEnd
         \resumeProjectHeading
